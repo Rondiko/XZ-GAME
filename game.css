@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+
+div {
+
+  -webkit-user-select: none;
+  /* Chrome, Safari, Opera */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Стандартный синтаксис */
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  font-family: "Rubik Bubbles", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  flex-direction: column;
+}
+
+.menu {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background-color: #0F4FA8;
+}
+
+.score {
+  height: 70px;
+  width: 70px;
+  background-color: #FFCA00;
+  color: #000000;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.reset {
+  height: 70px;
+  width: 70px;
+  background-color: #a61717;
+  margin-left: 70%;
+}
+
+.fild {
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+}
+
+.cell {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border: 1px solid #000;
+  font-size: 5em;
+}
+
+.cell:hover {
+  color: #FFCA00;
+  background-color: #0F4FA8;
+}
+.message{
+    color: white;
+    font-size: 2en;
+    margin-left: 20px;
+    line-height: 70px;
+}

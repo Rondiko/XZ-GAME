@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Bubbles&family=Stalinist+One&family=Stick&display=swap');
+body{
+background-image:url("i\ \(1\).webp") ;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 500px;
+ font-family: "Roboto", sans-serif;
+ animation-name: bg;
+ animation-duration: 10s;
+ animation-iteration-count: infinite;
+ transition: all 0.357s ease-in-out;
+}
+.main{
+    background-color: #fff;
+padding: 20px;
+border-radius: 10px;
+text-align: center;
+}
+.enter{
+    display: flex;
+    flex-direction: column  ;
+
+}
+input{
+    margin-bottom: 10px;
+}
+button:hover{
+background-color: #000;
+color: #fff;
+}
+input:focus{
+    outline: none;
+    border: 2px solid red;
+}
+@keyframes bg{
+    from{
+background-position: 0 0;
+
+    }
+    to{
+        background-position: 0 -150px;
+    }
+}

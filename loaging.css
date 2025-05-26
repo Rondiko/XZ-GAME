@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik+Bubbles&family=Stalinist+One&display=swap');
+body{
+     font-family: "Bebas Neue", serif;
+
+height: calc(100vh - 100px);
+display: flex;
+justify-content:center;
+align-items: center;
+background-color: #333;
+color: #f7f7f7;
+
+}
+.content{
+     width: 800px;
+}
+.loading__bar {
+     width: 500px;
+     height: 50px;
+     background-color: #f6b3ff;
+     border-radius: 10px;
+
+
+animation:  loading 4s 1 normal linear forwards ;
+}
+.dots1 {
+  width: 30px;
+
+animation:  dots1 1s 1 normal linear  forwards ;
+opacity: 0;
+overflow: hidden;
+}
+.dots2 {
+  width: 30px;
+opacity: 0;
+animation:  dots2 1s 1 normal linear 0.5s forwards ;
+
+overflow: hidden;
+}
+.dots3 {
+  width: 30px;
+opacity: 0;
+animation:  dots3 1s 1 normal linear 1s forwards ;
+
+overflow: hidden;
+}
+@keyframes loading {
+  from {
+    width: 0;
+    background-color: #f6b3ff;
+  }
+  50%{
+     width: 250px;
+     background-color: #d1a8ff;
+  }
+  to {
+    width: 500px;
+    background-color: #5800bb;
+  }
+}
+@keyframes dots1 {
+  from {
+    opacity: 0;
+
+  }
+  to {
+   opacity: 1;
+  }}
+  @keyframes dots2 {
+  from {
+    opacity: 0;
+
+  }
+  to {
+   opacity: 1;
+  }
+}
+  @keyframes dots3 {
+  from {
+    opacity: 0;
+
+  }
+  to {
+   opacity: 1;
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Авторизация</h1>
+        <div class="enter">
+            <div id="authError"></div>
+            <input type="text" placeholder="логин" id="username">
+            <input type="password" placeholder="пароль" id="password">
+        </div>
+        <button onclick="checkLogin()">войти</button>
+    </div>
+<script>
+
+// База пользователей прямо в коде (логин:пароль)
+const users = {
+    "admin": "admin123",
+    "user": "password",
+    "test": "test123"
+};
+
+// URL для перенаправления после успешного входа
+const SUCCESS_URL = "loading.html";
+
+function checkLogin() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+const errorBox = document.getElementById('authError');
+
+    // Проверка учетных данных
+    if (users[username] && users[username] === password) {
+        window.location.href = SUCCESS_URL;
+
+}
+else {
+                errorBox.textContent = 'Неверные логин или пароль!';
+            }
+}
+</script>
+</body>
+</html>
